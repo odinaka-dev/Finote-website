@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --text: #222222;
+    --text-h: #222222;
+    --bg: #ffffff;
+    --border: #e5e5e5;
+    --code-bg: #f4f4f4;
+
+    --accent: #222222;
+    --accent-bg: rgba(34, 34, 34, 0.08);
+    --accent-border: rgba(34, 34, 34, 0.25);
+
+    --social-bg: rgba(34, 34, 34, 0.05);
+
+    --shadow:
+      rgba(0, 0, 0, 0.08) 0 10px 15px -3px, rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
+
+    /* Fonts */
+    --heading: "Manrope", sans-serif;
+    --sans: "Outfit", sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
+
+    font: 18px/145% var(--sans);
+    letter-spacing: 0.18px;
+
+    color: var(--text);
+    background: var(--bg);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  font-weight: 600;
+  /* color: var(--text-h); */
+}
+
+/* Main heading */
+h1 {
+  line-height: 110%;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
+/* Section heading */
+h2 {
+  line-height: 118%;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+  margin: 0 0 10px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 125%;
+  margin: 0 0 8px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 0 0 8px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 130%;
+  margin: 0 0 6px;
+}
+
+p {
+  font-family: var(--sans);
+  margin: 0;
+  line-height: 150%;
+}
+
+/* General text elements */
+span,
+li,
+a,
+button,
+input,
+textarea,
+select {
+  font-family: var(--sans);
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+}
+
+.banner-image {
+  background: url("../assets/image/banner-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sub-image {
+  background: #222222 url("../assets/image/sub-banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
