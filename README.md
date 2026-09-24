@@ -31,7 +31,7 @@ This repository is the **landing page** for Finote.
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src="src/assets/image/dashboard-image.png" alt="Finote dashboard" width="100%" />
+      <img src="" alt="Finote dashboard" width="100%" />
     </td>
     <td width="50%" valign="top">
       <h3>📒 Bookkeeping</h3>
@@ -46,7 +46,7 @@ This repository is the **landing page** for Finote.
       <p>Whether it's rent, a loan or money a friend owes you, keep every debt in one place with payment tracking and reminders.</p>
     </td>
     <td width="50%" valign="top">
-      <img src="src/assets/image/debt-image.png" alt="Finote debt tracking" width="100%" />
+      <img src="" alt="Finote debt tracking" width="100%" />
     </td>
   </tr>
 </table>
@@ -73,14 +73,14 @@ The page has no router, no state management library, no UI kit and no animation 
 
 ## Tools used
 
-| Tool | Why |
-| --- | --- |
-| [React 19](https://react.dev) | Components |
-| [TypeScript](https://www.typescriptlang.org) | Type safety |
-| [Vite](https://vite.dev) | Dev server and build |
-| [Tailwind CSS v4](https://tailwindcss.com) | Styling, set up with the `@tailwindcss/vite` plugin |
+| Tool                                                     | Why                                                                |
+| -------------------------------------------------------- | ------------------------------------------------------------------ |
+| [React 19](https://react.dev)                            | Components                                                         |
+| [TypeScript](https://www.typescriptlang.org)             | Type safety                                                        |
+| [Vite](https://vite.dev)                                 | Dev server and build                                               |
+| [Tailwind CSS v4](https://tailwindcss.com)               | Styling, set up with the `@tailwindcss/vite` plugin                |
 | [React Compiler](https://react.dev/learn/react-compiler) | Automatic memoization, with no need for `useMemo` or `useCallback` |
-| Google Fonts | **Manrope** for headings, **Outfit** for body text |
+| Google Fonts                                             | **Manrope** for headings, **Outfit** for body text                 |
 
 The only runtime dependencies are `react`, `react-dom` and `tailwindcss`.
 

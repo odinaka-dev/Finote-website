@@ -1,5 +1,6 @@
 import { companyLinks, socialLinks } from "../constants/helpers";
 import { FinoteImages } from "../constants/image";
+import DownloadButtonComp from "./downloadButton";
 
 const FooterComponent = () => {
   return (
@@ -8,17 +9,7 @@ const FooterComponent = () => {
         <div>
           <img src={FinoteImages.logo} alt="finote_logo" width={104} />
           <div className="flex items-center gap-4 mt-6">
-            {[FinoteImages.downloadApple, FinoteImages.downloadPlaystore].map(
-              (items, index) => (
-                <button className="cursor-pointer" key={index}>
-                  <img
-                    src={items}
-                    alt="download_buttons"
-                    className="h-9 w-auto"
-                  />
-                </button>
-              ),
-            )}
+            <DownloadButtonComp />
           </div>
         </div>
 
