@@ -10,7 +10,7 @@ const LandingPageComponent = () => {
   return (
     <main className="">
       <div className="banner-image min-h-screen overflow-hidden">
-        <div className="max-w-[92%] sm:max-w-[90%] xl:max-w-300 mx-auto">
+        <div className="max-w-[92%] sm:max-w-[90%] xl:max-w-292 mx-auto">
           <HeaderComponent />
 
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-6">
@@ -38,7 +38,7 @@ const LandingPageComponent = () => {
         </div>
       </div>
       {/* sub landing page components */}
-      <div className="max-w-[90%] xl:max-w-300 mx-auto">
+      <div className="max-w-[90%] xl:max-w-292 mx-auto">
         <BookKeepingComp />
         <SubBannerComp />
         <FaqComp />

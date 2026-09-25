@@ -4,7 +4,7 @@ import DownloadButtonComp from "./downloadButton";
 
 const FooterComponent = () => {
   return (
-    <footer className="max-w-[90%] xl:max-w-300 mx-auto pt-8 pb-16 text-[#222222]">
+    <footer className="max-w-[90%] xl:max-w-292 mx-auto pt-8 pb-16 text-[#222222]">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div>
           <img
