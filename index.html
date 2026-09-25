@@ -2,29 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/public/favicon_io/android-chrome-192x192.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Finote | Simple Bookkeeping App to Track Income, Expenses & Debt
+    </title>
+    <meta
+      name="description"
+      content="Finote is a simple bookkeeping app to record payments, income and expenses, track debts with daily reminders, and see your daily financial operations in one place. Available on iOS and Android."
     />
+    <meta
+      name="keywords"
+      content="Finote, bookkeeping app, expense tracker, income tracker, debt tracker, personal finance app, money management, Nigeria"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Finote" />
+    <meta name="theme-color" content="#222222" />
+    <link rel="canonical" href="https://finote-web.vercel.app/" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon_io/favicon.ico" sizes="any" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/public/favicon_io/favicon-32x32.png"
+      href="/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/public/favicon_io/favicon-16x16.png"
+      href="/favicon_io/favicon-16x16.png"
     />
-    <link rel="manifest" href="/public/favicon_io/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finote | Bookeeping</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Finote" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:url" content="https://finote-web.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Finote | Simple Bookkeeping App to Track Income, Expenses & Debt"
+    />
+    <meta
+      property="og:description"
+      content="Record payments, income and expenses, track debts with daily reminders, and see your daily financial operations all in one simple app."
+    />
+    <meta property="og:image" content="https://finote-web.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Finote bookkeeping app" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Finote | Simple Bookkeeping App to Track Income, Expenses & Debt"
+    />
+    <meta
+      name="twitter:description"
+      content="Record payments, income and expenses, track debts with daily reminders, and see your daily financial operations all in one simple app."
+    />
+    <meta name="twitter:image" content="https://finote-web.vercel.app/og-image.png" />
+
+    <!-- Performance: connect to Google Fonts early -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://finote-web.vercel.app/#organization",
+            "name": "Finote",
+            "url": "https://finote-web.vercel.app/",
+            "logo": "https://finote-web.vercel.app/favicon_io/android-chrome-512x512.png",
+            "email": "info@finote.com",
+            "telephone": "+2348051346872",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ketu",
+              "addressRegion": "Lagos",
+              "addressCountry": "NG"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://finote-web.vercel.app/#website",
+            "url": "https://finote-web.vercel.app/",
+            "name": "Finote",
+            "publisher": { "@id": "https://finote-web.vercel.app/#organization" }
+          },
+          {
+            "@type": "MobileApplication",
+            "name": "Finote",
+            "operatingSystem": "iOS, Android",
+            "applicationCategory": "FinanceApplication",
+            "description": "Finote is a bookkeeping app that helps you build the habit of recording your finances. Record payments, income and expenses, track debts with daily reminders, and compare records of your total spending.",
+            "publisher": { "@id": "https://finote-web.vercel.app/#organization" },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "NGN"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Finote?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Finote is a bookkeeping record application that helps you create a habit of recording your finances easily, all in one simple app. Track debt, view cost spent and correlate records of your total expenditures."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How to get started?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Download the Finote app, create an account and start recording your payments, income and expenses right away."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get Finote application",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Finote is available for download on both the Google Play Store and the Apple App Store."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is It Available on playstore & App store.",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Finote is available on both the Google Play Store and the Apple App Store."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I set a daily reminder for debt owed",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. You can set daily reminders so you never lose track of debts owed to you or by you."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app-html--></div>
+    <noscript>
+      Finote is a simple bookkeeping app to record payments, income and
+      expenses, and track debts. Download it on the Apple App Store or Google
+      Play Store.
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

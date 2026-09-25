@@ -6,6 +6,7 @@ export const PROPSDATA = [
     id: 1,
     badge: "Book Keeping",
     image: FinoteImages.dashboardImg,
+    alt: "Finote dashboard for recording income and expenses",
     title: "Record easily your finance, income & Expenses.",
     content:
       "Open a finote account easily in minutes. Easily record your income, expenditures, expenses and even financial mistakes for better tracking.",
@@ -14,6 +15,7 @@ export const PROPSDATA = [
     id: 2,
     badge: "Debt",
     image: FinoteImages.debtImg,
+    alt: "Finote debt tracker with payment reminders",
     title: "Curate, Record and Collect money owed or owed to Easily.",
     content:
       "Owing money, rent, or a very big loan, now you can easily track all that debt in one simple application for easy payment and reminder.",
@@ -46,6 +48,20 @@ export const faqs = [
     question: "Can I set a daily reminder for debt owed",
     answer:
       "Yes. You can set daily reminders so you never lose track of debts owed to you or by you.",
+  },
+];
+
+// app store download links (replace "#" with the real store URLs)
+export const storeLinks = [
+  {
+    image: FinoteImages.downloadApple,
+    alt: "Download Finote on the App Store",
+    href: "#",
+  },
+  {
+    image: FinoteImages.downloadPlaystore,
+    alt: "Get Finote on Google Play",
+    href: "#",
   },
 ];
 

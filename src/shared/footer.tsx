@@ -7,7 +7,13 @@ const FooterComponent = () => {
     <footer className="max-w-[90%] xl:max-w-300 mx-auto pt-8 pb-16 text-[#222222]">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div>
-          <img src={FinoteImages.logo} alt="finote_logo" width={104} />
+          <img
+            src={FinoteImages.logo}
+            alt="Finote logo"
+            width={104}
+            height={37}
+            loading="lazy"
+          />
           <div className="flex items-center gap-4 mt-6">
             <DownloadButtonComp />
           </div>
@@ -22,7 +28,7 @@ const FooterComponent = () => {
               </a>
             ))}
           </div>
-          <div className="text-[14px]">
+          <address className="text-[14px] not-italic">
             <p className="mb-3">Ketu, Lagos state Nigeria.</p>
             <a href="mailto:info@finote.com" className="block hover:underline">
               info@finote.com
@@ -30,7 +36,7 @@ const FooterComponent = () => {
             <a href="tel:+2348051346872" className="block hover:underline">
               +234 805 134 6872
             </a>
-          </div>
+          </address>
         </div>
       </div>
 
@@ -44,6 +50,7 @@ const FooterComponent = () => {
                 key={index}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={`Finote on ${items.alt}`}
                 className="p-1"
               >
                 <img src={items.icon} alt={items.alt} className="w-4.5 h-4.5" />

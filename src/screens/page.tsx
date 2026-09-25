@@ -27,7 +27,10 @@ const LandingPageComponent = () => {
             <div className="w-full lg:w-[65%] flex justify-end relative top-0 md:top-20">
               <img
                 src={FinoteImages.bannerImg}
-                alt="Finote finance app"
+                alt="Person recording salary income and spending in the Finote app"
+                width={803}
+                height={925}
+                fetchPriority="high"
                 className="w-full max-w-8xl h-auto object-cover"
               />
             </div>
