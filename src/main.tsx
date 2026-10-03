@@ -1,12 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router";
 import "./styles/index.css";
-import App from "./screens/page.tsx";
+import AppRoutes from "./routes.tsx";
 
 const rootElement = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   </StrictMode>
 );
 

@@ -1,5 +1,5 @@
 import { PROPSDATA } from "../constants/helpers";
-import DownloadButtonComp from "../shared/downloadButton";
+import DownloadButtonComp from "./downloadButton";
 
 const BookKeepingComp = () => {
   return (

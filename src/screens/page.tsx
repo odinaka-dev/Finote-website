@@ -1,10 +1,9 @@
 import { FinoteImages } from "../constants/image";
 import DownloadButtonComp from "../shared/downloadButton";
 import FaqComp from "../shared/faq";
-import FooterComponent from "../shared/footer";
 import HeaderComponent from "../shared/header";
-import BookKeepingComp from "./book-keeping";
-import SubBannerComp from "./sub-banner";
+import BookKeepingComp from "../shared/book-keeping";
+import SubBannerComp from "../shared/sub-banner";
 
 const LandingPageComponent = () => {
   return (
@@ -43,7 +42,6 @@ const LandingPageComponent = () => {
         <SubBannerComp />
         <FaqComp />
       </div>
-      <FooterComponent />
     </main>
   );
 };

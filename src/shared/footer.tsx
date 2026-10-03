@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { companyLinks, socialLinks } from "../constants/helpers";
 import { FinoteImages } from "../constants/image";
 import DownloadButtonComp from "./downloadButton";
@@ -71,9 +72,9 @@ const FooterComponent = () => {
       <div className="flex flex-col sm:flex-row justify-between gap-4 mt-16 text-[12px]">
         <p>Copyright © {new Date().getFullYear()}, Finote</p>
         <div className="flex items-center gap-10 sm:gap-22">
-          <a href="#" className="hover:underline">
+          <Link to="/privacy-policy" className="hover:underline">
             Privacy Policy
-          </a>
+          </Link>
           <a href="#" className="hover:underline">
             Cookie Policy
           </a>

@@ -1,5 +1,5 @@
 import { FinoteImages } from "../constants/image";
-import DownloadButtonComp from "../shared/downloadButton";
+import DownloadButtonComp from "./downloadButton";
 
 const SubBannerComp = () => {
   return (
