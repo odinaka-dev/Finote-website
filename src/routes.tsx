@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Route, Routes } from "react-router";
 import { pageRoutes, type PagePath } from "./constants/routes";
 import NotFoundPage from "./screens/not-found";
+import ContactPage from "./screens/contact";
 import LandingPageComponent from "./screens/page";
 import PrivacyPolicyPage from "./screens/privacy-policy";
 import LayoutComponent from "./shared/layout";
@@ -10,6 +11,7 @@ import LayoutComponent from "./shared/layout";
 const pageElements: Record<PagePath, ReactNode> = {
   "/": <LandingPageComponent />,
   "/privacy-policy": <PrivacyPolicyPage />,
+  "/contact": <ContactPage />,
 };
 
 const AppRoutes = () => {

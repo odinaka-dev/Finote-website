@@ -61,7 +61,7 @@ export const storeLinks = [
   {
     image: FinoteImages.downloadPlaystore,
     alt: "Get Finote on Google Play",
-    href: "#",
+    href: "https://play.google.com/store/apps/details?id=com.odinakadevv.finote&pcampaignid=web_share",
   },
 ];
 
@@ -74,5 +74,16 @@ export const socialLinks = [
 
 export const companyLinks = [
   { label: "About Us", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Contact Us", href: "/contact" },
 ];
+
+// contact page
+export const contactEmail = "info@finote.com";
+
+export const contactDetails = [
+  { icon: "mail", label: contactEmail, href: `mailto:${contactEmail}` },
+  { icon: "location", label: "Ketu, Lagos state Nigeria." },
+  { icon: "phone", label: "+234 805 134 6872", href: "tel:+2348051346872" },
+] as const;
+
+export const contactTopics = ["Support", "Feedback", "General Enquiry"];

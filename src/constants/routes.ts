@@ -13,6 +13,13 @@ export const pageRoutes = [
     description:
       "Learn how Finote collects, uses, stores, and protects your personal and financial information when you use the Finote app.",
   },
+  {
+    path: "/contact",
+    file: "contact.html",
+    title: "Contact Us | Finote Support & Feedback",
+    description:
+      "Get help with the Finote app or share your feedback. Contact the Finote support team by email, phone, or the contact form.",
+  },
 ] as const;
 
 export type PagePath = (typeof pageRoutes)[number]["path"];

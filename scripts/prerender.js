@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const SITE_URL = "https://finote-web.vercel.app";
+const SITE_URL = "https://finote.app";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const templatePath = path.join(root, "dist/index.html");
